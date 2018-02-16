@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'general/couple'
 
   get 'general/wed'
-  root 'general#home'
+  root 'general#index'
   get 'index' => 'general#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
