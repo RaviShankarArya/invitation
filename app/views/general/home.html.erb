@@ -1,0 +1,89 @@
+<div class="home_page container">
+  <div class="home_content text-center">
+    <div class="names">
+    <h1 class="inline text-white">Ravi</h1>
+    <i class="fa fa-heart text-blue fa-5x inline"></i>
+    <h1 class="inline text-white">Sandhya</h1>
+  </div>
+    <h5 class="bottom_text">WE'RE GETTING MARRIED.</h5>
+    <span id="claim_count">00:00:00</span>
+  </div>
+</div>
+<script>
+// function time() {
+//   var date1 = new Date('2018/02/14 00:00:00');
+//   var date2 = new Date('2018/03/03 09:10:00');
+//   var day_1 = Math.floor(date1.getTime() / (3600 * 24 * 1000)); //days as integer from..
+//   var day_2 = Math.floor(date2.getTime() / (3600 * 24 * 1000));
+//   var day_3 = day_2 - day_1;
+//     var hours = Math.floor(dh / 3600000);
+//     var dm = dh - 3600000 * hours;
+//     var min = Math.floor(dm / 60000);
+//     var ds = dm - 60000 * min;
+//     var sec = Math.floor(ds / 1000);
+//     var dmilli = ds - 1000 * sec;
+//     setTimeout(time, dmilli);
+//     hours = ('0' + hours).slice(-2);
+//     min = ('0' + min).slice(-2);
+//     sec = ('0' + sec).slice(-2);
+//
+//     console.log(day_3);
+//     document.getElementById('claim_count').innerHTML = day_3 + ':' + hours + ':' + min + ':' + sec;
+// }
+// time();
+$("#getting-started")
+ .countdown("2018/03/04", function(event) {
+   $(this).text(
+     event.strftime('%D days %H:%M:%S')
+   );
+ });
+ (function() {
+
+   var date1 = new Date('2018/02/14 00:00:00');
+  var date2 = new Date('2018/03/03 09:10:00');
+  DateDiff(date1,date2);
+  function DateDiff(date1, date2) {
+    this.days = null;
+    this.hours = null;
+    this.minutes = null;
+    this.seconds = null;
+    this.date1 = date1;
+    this.date2 = date2;
+
+    this.init();
+  }
+
+  DateDiff.prototype.init = function() {
+    var data = new DateMeasure(this.date1 - this.date2);
+    this.days = data.days;
+    this.hours = data.hours;
+    this.minutes = data.minutes;
+    this.seconds = data.seconds;
+  };
+
+  function DateMeasure(ms) {
+    var d, h, m, s;
+    s = Math.floor(ms / 1000);
+    m = Math.floor(s / 60);
+    s = s % 60;
+    h = Math.floor(m / 60);
+    m = m % 60;
+    d = Math.floor(h / 24);
+    h = h % 24;
+
+    this.days = d;
+    this.hours = h;
+    this.minutes = m;
+    this.seconds = s;
+  };
+
+  Date.diff = function(date1, date2) {
+    return new DateDiff(date1, date2);
+  };
+
+  Date.prototype.diff = function(date2) {
+    return new DateDiff(this, date2);
+  };
+
+})();
+</script>

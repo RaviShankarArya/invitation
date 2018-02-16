@@ -1,0 +1,46 @@
+<nav class="navbar navbar-toggleable-md navbar-light invitation_menu">
+   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+    <!-- <a class="navbar-brand mobi_logo" href="/"><%#=image_tag 'mobi_logo.png' ,class: 'mobi_logo'%></a> -->
+   <div class="collapse navbar-collapse" id="navbarNav">
+     <ul class="navbar-nav m-auto" id="menu_id">
+       <li class="nav-item">
+         <a class="nav-link <%= "active" if params['action'] == 'home' %>" href="/">
+           <i class="fa fa-home text-center fa-nav fa"></i>
+           Home
+         </a>
+       </li>
+       <li class="nav-item <%= "active" if params['action'] == 'faq' %>">
+         <a class="nav-link" href="/faq">
+           <i class="fa fa-star text-center fa-nav fa"></i>
+           Wedding
+         </a>
+       </li>
+       <li class="nav-item <%= "active" if params['action'] == 'privacy' %>">
+         <a  class="nav-link" href="/privacy">
+           <i class="fa fa-star text-center fa-nav fa"></i>
+           vara-vadhu
+         </a>
+       </li>
+       <li class="nav-item <%= "active" if params['action'] == 'rules' %>">
+         <a class="nav-link"  href="/rules">
+           <i class="fa fa-camera-retro text-center fa-nav fa"></i>
+           Gallery
+         </a>
+       </li>
+       <li class="nav-item <%= "active" if params['action'] == 'about_us' %>">
+         <a class="nav-link"  href="/about_us">
+          <i class="fa fa-users text-center fa-nav fa"></i>
+           People
+         </a>
+       </li>
+       <li class="nav-item <%= "active" if params['action'] == 'support' %>">
+         <a  class="nav-link" href="/support">
+           <i class="fa fa-map-marker text-center fa-nav fa"></i>
+           Location
+         </a>
+       </li>
+     </ul>
+   </div>
+ </nav>
