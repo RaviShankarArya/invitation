@@ -18,6 +18,7 @@
               <h1>Ravi &amp; Sandhya</h1>
               <h2>We Are Getting Married</h2>
               <div><p id="demo"></p></div>
+              <div class="clock"></div>
             </div>
           </div>
         </div>
@@ -3405,4 +3406,11 @@ var FlipClock;
   FlipClock.Lang['chinese'] = FlipClock.Lang.Chinese;
 
 }(jQuery));
+</script>
+
+<script type="text/javascript">
+  var clock = $('.clock').FlipClock(3600 * 24 * 3, {
+    clockFace: 'DailyCounter',
+    countdown: true
+  });
 </script>
