@@ -17,7 +17,7 @@
             <div class="display-tc animate-box" data-animate-effect="fadeIn">
               <h1>Ravi &amp; Sandhya</h1>
               <h2>We Are Getting Married</h2>
-              <div class="clock"></div>
+              <div id="demo" class="demo"></div>
             </div>
           </div>
         </div>
@@ -238,7 +238,7 @@ var x = setInterval(function() {
   text-align: center;
   position: relative;
   width: 100%;
-  margin: 1em;
+  margin-left: 80px;
 }
 
 .flip-clock-wrapper:before,
@@ -617,6 +617,11 @@ var x = setInterval(function() {
   100% {
     opacity: 0; } }
 
+@media (min-width: 768px) {
+  .flip-clock-wrapper {
+
+  }
+}
 
 
 </style>
