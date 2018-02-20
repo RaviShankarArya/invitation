@@ -1,0 +1,36 @@
+/* line 1, /home/gmadmin/Downloads/invitation/app/assets/stylesheets/my_style.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, /home/gmadmin/Downloads/invitation/app/assets/stylesheets/my_style.scss */
+#fh5co-header {
+  background-image: url(/assets/img_bg_2-dffca45ba6471bf0b4730506ee25ca6d099a9a3e482c3750f6d1e3c2d32d002b.jpg);
+}
+
+/* line 8, /home/gmadmin/Downloads/invitation/app/assets/stylesheets/my_style.scss */
+#fh5co-event {
+  background-image: url(/assets/img_bg_3-07874110200933478a31f473cc11ebe5e6e67270e9bb5b1ac1c092392964d22c.jpg);
+}
+
+/* line 11, /home/gmadmin/Downloads/invitation/app/assets/stylesheets/my_style.scss */
+.img_100 {
+  width: 100%;
+}
+
+/* line 14, /home/gmadmin/Downloads/invitation/app/assets/stylesheets/my_style.scss */
+.m_b_20 {
+  margin-bottom: 20px;
+}
+
+/* line 17, /home/gmadmin/Downloads/invitation/app/assets/stylesheets/my_style.scss */
+#fh5co-footer {
+  padding: 10px 0px;
+  background-image: url(/assets/img_bg_2-dffca45ba6471bf0b4730506ee25ca6d099a9a3e482c3750f6d1e3c2d32d002b.jpg);
+}
+
+/* line 21, /home/gmadmin/Downloads/invitation/app/assets/stylesheets/my_style.scss */
+.fh5co-nav-toggle {
+  display: none;
+}
