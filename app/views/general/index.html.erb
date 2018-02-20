@@ -3409,7 +3409,10 @@ var FlipClock;
 </script>
 
 <script type="text/javascript">
-  var clock = $('.clock').FlipClock(3600 * 24 * 11, {
+  var countDownDate = new Date("Mar 4, 2018 08:20:00").getTime();
+  var now = new Date().getTime();
+  var res = countDownDate - now;
+  var clock = $('.clock').FlipClock(res, {
     clockFace: 'DailyCounter',
     countdown: true
   });
